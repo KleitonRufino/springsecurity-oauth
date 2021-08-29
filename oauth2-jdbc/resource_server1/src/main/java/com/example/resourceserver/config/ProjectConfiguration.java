@@ -40,9 +40,10 @@ public class ProjectConfiguration extends WebSecurityConfigurerAdapter {
 				//.authorizationUri("https://github.com/login/oauth/authorize")
 				.tokenUri("http://localhost:6060/oauth/token")
 				//.userInfoUri("https://api.github.com/user")
-				.userNameAttributeName("id")
+				//.userNameAttributeName("id")
 				.clientName("app")
 				.authorizationGrantType(AuthorizationGrantType.CLIENT_CREDENTIALS)
+				//.authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
 				//.redirectUriTemplate("{baseUrl}/{action}/oauth2/code/{registrationId}")
 				.build();
 		return cr;

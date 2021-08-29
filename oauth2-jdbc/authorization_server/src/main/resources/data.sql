@@ -4,7 +4,7 @@ INSERT INTO oauth_client_details
 	refresh_token_validity, additional_information, autoapprove)
 VALUES
 	('client1', 'secret1', 'read',
-	'client_credentials', null, null, 36000, 36000, null, TRUE);
+	'client_credentials,refresh_token', null, null, 36000, 36000, null, TRUE);
 	
 INSERT INTO oauth_client_details
 	(client_id, client_secret, scope, authorized_grant_types,

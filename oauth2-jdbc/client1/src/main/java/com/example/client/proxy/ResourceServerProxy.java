@@ -1,13 +1,13 @@
 package com.example.client.proxy;
 
-import com.example.client.managers.TokenManager;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.reactive.function.client.WebClient;
+
+import com.example.client.managers.TokenManager;
 
 @Component
 public class ResourceServerProxy {
